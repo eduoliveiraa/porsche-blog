@@ -2,10 +2,10 @@
 
 :root {
   --cor0: #222222;
-  --cor1: #73030d;
-  --cor2: #d92938;
-  --cor3: #735010;
-  --cor4: #d9aa52;
+  --cor1: #402306;
+  --cor2: #c29049;
+  --cor3: #464c47;
+  --cor4: #a43131;
 }
 
 * {
@@ -14,11 +14,12 @@
 }
 
 body {
-  bac
+  background-color: #464c47;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 h1, h2 {
@@ -29,7 +30,7 @@ h1, h2 {
 header {
   min-height: 150px;
   padding-top: 40px;
-  background-image: linear-gradient(to bottom, #73030d, #d92938);
+  background-image: linear-gradient(to bottom, #c0c0c0ef, white);
 }
 
 header p {
@@ -42,39 +43,46 @@ header p {
   padding-left: 10px;
   font-size: 1.2em;
   max-width: 500px;
+  color: #464c47;
+  font-weight: bolder;
+  font-size: 17.5px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.219);
 }
 
 header h1 {
-  color: white;
+  color: #a43131;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
   font-weight: bolder;
   font-size: 2.5em;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
+  text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.253);
   text-align: center;
   letter-spacing: -3px;
-  word-spacing: 3px;
+  word-spacing: 4px;
 }
 
 nav {
-  background-color: var(--cor2);
+  background-color: white;
   padding: 10px;
   margin-bottom: 0px;
+  box-shadow: 0px 7px 7px #22222280;
 }
 
 nav a {
   margin: 10px 10px 0px 10px;
   padding: 10px 10px 0px 10px;
   text-decoration: none;
-  color: #222222;
+  color: #464c47;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 nav a:hover {
-  background-color: var(--cor4);
+  background-color: #a43131e0;
   color: white;
   padding: 10px;
   border-radius: 5px;
+  color: var(--cor2);
 }
 
 main {
@@ -83,6 +91,7 @@ main {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
 main img {
@@ -91,20 +100,28 @@ main img {
   margin: auto;
   display: block;
   max-height: 450px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
 }
 
 main h1 {
   text-indent: 20px;
-  color: var(--cor3);
-  margin-top: 0px;
-  font-size: 1.9em;
+  color: #c29049;
+  margin: 0px;
+  font-size: 2em;
+  background-image: linear-gradient(to right, #a43131, transparent);
+  border-radius: 10px;
+  padding: 2px;
 }
 
 main h2 {
   text-indent: 20px;
   padding-top: 10px;
-  font-size: 1.7em;
-  color: #d9aa52;
+  padding: 6px;
+  font-size: 1.8em;
+  color: var(--cor4);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.884), transparent);
+  border-radius: 10px;
 }
 
 main p {
@@ -118,4 +135,40 @@ main p {
 
 article {
   margin-top: 0px;
+}
+
+div.video {
+  background-image: linear-gradient(to right, #c29049, rgba(255, 255, 255, 0.692), #c29049, rgba(255, 255, 255, 0.767), #c29049, rgba(255, 255, 255, 0.671), #c29049b6);
+  padding: 20px;
+  margin: 0px -20px 30px -20px;
+  position: relative;
+  padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 4px;
+  text-align: center;
+  background-color: var(--cor4);
+  font-size: 15px;
+}
+
+.github-link {
+  text-decoration: none;
+  color: var(--cor2);
+}
+
+.github-link:hover {
+  background-color: #c2904944;
+  margin: 3px;
+  padding: 2px;
+  border-radius: 5px;
 }
