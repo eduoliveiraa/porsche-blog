@@ -161,6 +161,10 @@ footer {
   font-size: 15px;
 }
 
+footer p {
+  font-weight: bolder;
+}
+
 .github-link {
   text-decoration: none;
   color: var(--cor2);
